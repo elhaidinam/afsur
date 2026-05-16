@@ -1,11 +1,34 @@
-<div align="center">
+# AFSUR26 - Safety Updates
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+A professional Pharmacovigilance signal detection and ICSR overview tool.
 
-  <h1>Built with AI Studio</h2>
+## Local Development
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+To run this project locally on your Mac:
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+1. **Download the code**: Use the **Export to ZIP** option in the **Settings** menu of AI Studio.
+2. **Unzip** the downloaded folder.
+3. **Open Terminal** and navigate to the project folder.
+4. **Install Dependencies**:
+   ```bash
+   npm install
+   ```
+5. **Run Development Server**:
+   ```bash
+   npm run dev
+   ```
+6. **Open your browser** at `http://localhost:3000`.
 
-</div>
+## Building for Production
+
+To create a production-ready build:
+
+```bash
+npm run build
+```
+
+The output will be in the `dist/` directory.
+
+## GitHub Pages Deployment
+
+This project includes a GitHub Action in `.github/workflows/deploy.yml` that automatically deploys your app to GitHub Pages when you push to the `main` branch.
